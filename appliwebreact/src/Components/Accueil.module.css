@@ -1,0 +1,21 @@
+.maindiv{
+    display: inline-flex;
+    margin-top: 25px;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+    box-shadow: 10px 5px 5px rgba(0, 195, 255, 0.37);
+}
+.maindiv div{
+    padding-right: 20px;
+    padding-left: 20px;
+   
+}
+
+.picdiv{
+    background-image: url(https://images0.persgroep.net/rcs/JZCwmJMpuTVnsyHUbmWQ33skBl0/diocontent/147295938/_crop/0/0/899/508/_fitwidth/694/?appId=21791a8992982cd8da851550a453bd7f&quality=0.8);
+}
+
+.verticalAlign{
+    display: flex;
+    align-items: center;
+}
