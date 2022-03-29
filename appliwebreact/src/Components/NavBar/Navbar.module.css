@@ -1,0 +1,13 @@
+.navBarContainer {
+    width: 100%;
+    display: block;
+}
+
+.navBarContent {
+    display: flex;
+    flex-direction: row;
+}
+
+.navBarContent Button {
+    margin-left: 10px;
+}
