@@ -19,6 +19,22 @@
 - ### `Une navBar pour la partie Connexion/deconnexion`
 - ### `Un autre component pour afficher le contenu de chaque page`
 
+## Techno imposée
+- ### `BluePrint` 
+- C'est une bibliothèque de composant React
+
+- Installation de BluePrint : `yarn add @blueprintjs/core react react-dom`
+
+## Répartition des tâches
+- Connexion
+- Deconnexion
+- Router
+- NavBar
+- View
+- API météo
+- Ajoutez des icône en fonction de la météo *
+- Localisation *
+
 
 
 
