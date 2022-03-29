@@ -3,6 +3,7 @@ import { Card } from 'semantic-ui-react'
 import meteoCSS from './Meteo.component.css';
 
 const date = new Date();
+const dateJJ = new Date();
 const nomDuJour = {weekday: "long"};
 const dateDuJour = {year: "numeric", month: "long", day: "2-digit"};
 const dateDuJourMajuscule = date.toLocaleDateString('fr-FR', nomDuJour).toUpperCase()
@@ -32,7 +33,7 @@ const meteo = ({meteoData}) => (
                 <div className="weather-gradient"></div>
                 <div className="date-container">
                     <h2 className="date-dayname">{dateDuJourMajuscule}</h2>
-                    <span className="date-day">{date.toLocaleDateString("fr-FR", dateDuJour)}</span><i
+                    <span className="date-day">{dateJJ.toLocaleDateString("fr-FR", dateDuJour)}</span><i
                     className="location-icon" data-feather="map-pin"></i><span className="location">{meteoData.name}, FR</span>
                 </div>
                 <div className="weather-container"><i className="weather-icon" data-feather="sun"></i>
