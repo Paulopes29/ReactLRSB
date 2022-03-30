@@ -10,12 +10,12 @@
     line-height: 1.25em;
 }
 
-.clear {
+.clearC {
     clear: both;
 }
 
 
-.container {
+.containerDepart {
     -webkit-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
     background-color: #222831;
@@ -26,7 +26,7 @@
     justify-content: center;
 }
 
-.weather-side {
+.weatherSidePart {
     position: relative;
     height: 90%;
     border-radius: 25px;
@@ -44,12 +44,12 @@
     float: left;
 }
 
-.weather-side:hover {
+.weatherSidePart:hover {
     -webkit-transform: scale(1.1) perspective(1500px) rotateY(10deg);
     transform: scale(1.1) perspective(1500px) rotateY(10deg);
 }
 
-.weather-gradient {
+.weatherGradientC {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -60,81 +60,82 @@
     opacity: 0.8;
 }
 
-.date-container {
+.dateContainerC {
     position: absolute;
     top: 25px;
     left: 25px;
 }
 
-.date-dayname {
+.dateDaynameC {
     margin: 0;
 }
 
-.date-day {
+.dateDayC {
     display: block;
 }
 
-.location {
+.locationC {
     display: inline-block;
     margin-top: 10px;
 }
 
-.location-icon {
+.locationIconC {
     display: inline-block;
     height: 0.8em;
     width: auto;
     margin-right: 5px;
 }
 
-.weather-container {
+.weatherContainerC {
     position: absolute;
     bottom: 25px;
     left: 25px;
 }
 
-.weather-icon.feather {
+.weatherIconC2 {
     height: 60px;
     width: auto;
 }
 
-.weather-temp {
+.weatherTempC {
     margin: 0;
     font-weight: 700;
     font-size: 4em;
 }
 
-.weather-desc {
+.weatherDescC {
     margin: 0;
 }
 
-.info-side {
+.infoSideC {
     position: relative;
     float: left;
     height: 100%;
     padding-top: 25px;
 }
 
-.today-info {
+.todayInfoC {
     padding: 15px;
     margin: 0 25px 25px 25px;
     /* 	box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25); */
     border-radius: 10px;
 }
 
-.today-info>div:not(:last-child) {
+.todayInfoC>div:not(:last-child) {
     margin: 0 0 10px 0;
 }
 
-.today-info>div .title {
+.todayInfoC>div .title {
     float: left;
     font-weight: 700;
 }
 
-.today-info>div .value {
+.todayInfoC>div .valueC {
+    border-left: 30px;
     float: right;
 }
 
-.week-list {
+.weekListC {
     list-style-type: none;
     padding: 0;
     margin: 10px 35px;
@@ -143,7 +144,7 @@
     border-radius: 10px;
 }
 
-.week-list>li {
+.weekListC>li {
     float: left;
     padding: 15px;
     cursor: pointer;
@@ -153,7 +154,7 @@
     border-radius: 10px;
 }
 
-.week-list>li:hover {
+.weekListC>li:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
@@ -163,66 +164,28 @@
     box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2)
 }
 
-.week-list>li.active {
+.weekListC>li.active {
     background: #fff;
     color: #222831;
     border-radius: 10px;
 }
 
-.week-list>li .day-name {
+.weekListC>li .dayNameC {
     display: block;
     margin: 10px 0 0 0;
     text-align: center;
 }
 
-.week-list>li .day-icon {
+.weekListC>li .dayIconC {
     display: block;
     height: 30px;
     width: auto;
     margin: 0 auto;
 }
 
-.week-list>li .day-temp {
+.weekListC>li .dayTempC {
     display: block;
     text-align: center;
     margin: 10px 0 0 0;
     font-weight: 700;
-}
-
-.location-container {
-    padding: 25px 35px;
-}
-
-.location-button {
-    outline: none;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 25px;
-    padding: 10px;
-    font-family: 'Montserrat', sans-serif;
-    background-image: var(--gradient);
-    color: #ffffff;
-    font-weight: 700;
-    -webkit-box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-    -webkit-transition: -webkit-transform 200ms ease;
-    transition: -webkit-transform 200ms ease;
-    -o-transition: transform 200ms ease;
-    transition: transform 200ms ease;
-    transition: transform 200ms ease, -webkit-transform 200ms ease;
-}
-
-.location-button:hover {
-    -webkit-transform: scale(0.95);
-    -ms-transform: scale(0.95);
-    transform: scale(0.95);
-}
-
-.location-button .feather {
-    height: 1em;
-    width: auto;
-    margin-right: 5px;
 }
