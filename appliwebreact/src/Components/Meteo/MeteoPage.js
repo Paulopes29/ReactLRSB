@@ -23,7 +23,7 @@ function useMeteoAPI ({apiKey, latitude, longitude, unite = 'metric'}) {
 // Fonction Meteo qui utilise la fonction useMeteoAPI avec l'API Key en params, latitude, longitude et l'unité (metre, ...)
 function Meteo ({}) {
     const meteo = useMeteoAPI({
-        apiKey: 'c9f537b79dd1d68d847b5d1927b66364',
+        apiKey: 'b73c6ca7f13ab1022bc2768f583091e0',
         latitude: 45.7802,
         longitude: 3.0736,
         unite: 'imperial'
