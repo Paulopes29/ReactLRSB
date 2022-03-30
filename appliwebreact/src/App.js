@@ -1,6 +1,4 @@
 import * as React from "react";
-import {Route, Routes,} from "react-router-dom";
-import TestRoute from "./Components/test"
 import SideBarTest from "./Components/SideBar/SideBar"
 import tableRoutes from "./Components/Routes/Routes"
 import Navbar from "./Components/NavBar/Navbar"
@@ -14,6 +12,9 @@ function App() {
             {/*
             Liste des Routes
             */}
+            <SideBarTest routes={tableRoutes}/>
+            <Navbar/>
+
 
             <Accueil />
             {<SideBarTest routes={tableRoutes}/>}

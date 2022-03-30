@@ -3,17 +3,21 @@ import {Route, Routes} from "react-router-dom";
 import Accueil from "../Accueil/Accueil";
 import TestRoute from "../test";
 import LoginPage from "../Login/Login";
+import Style from "./Main.module.css"
 
-const Main = (props) => {
+const Main = () => {
 
     return(
-        <div>
-            <Routes>
-                <Route path="/" element={<Accueil/>}/>
-                <Route path="/Test" element={<TestRoute/>}/>
-                <Route path="/Login" element={<LoginPage/>}/>
-            </Routes>
-        </div>
+
+        <section className={Style.ext}>
+            <div className={Style.MainCss}>
+                <Routes>
+                    <Route path="/" element={<Accueil/>}/>*/}
+                    <Route path="/Test" element={<TestRoute/>}/>
+                    <Route path="/Login" element={<LoginPage/>}/>
+                </Routes>
+            </div>
+        </section>
     )
 }
 export default  Main;
