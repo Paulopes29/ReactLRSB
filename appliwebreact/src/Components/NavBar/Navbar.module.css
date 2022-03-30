@@ -1,6 +1,12 @@
 .navBarContainer {
     width: 100%;
-    display: block;
+    position: fixed;
+    display: inline-flex;
+    top: 0;
+    left: 270px;
+    max-width: calc(100vw - 270px);
+    height: 100vh;
+    z-index: 100;
 }
 
 .navBarContent {
@@ -11,3 +17,4 @@
 .navBarContent Button {
     margin-left: 10px;
 }
+
