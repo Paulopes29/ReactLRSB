@@ -45,7 +45,7 @@ function Meteo ({}) {
 
     //Ici on récupère les données qui nous intéressent : la température jusqu'à J+3 && l'humidité du jour J && la vitesse du vent jour J && description meteo jour J
     const tempJours = meteo && meteo.daily.slice(0, 5).map((d) => parseFloat(((d.temp.max-32)*(5/9))).toString().substring(0,4));
-    const humiditeJours = meteo && meteo.daily.slice(0, 1).map((d) => parseFloat((d.humidity)).toString().substring(0,1));
+    const humiditeJours = meteo && meteo.daily.slice(0, 1).map((d) => parseFloat((d.humidity)).toString().substring(0,3));
     const ventJours = meteo && meteo.daily.slice(0, 1).map((d) => parseFloat((d.wind_speed)).toString().substring(0,1));
     const descriptionMeteo = meteo && meteo.daily.slice(0, 1).map((d) => (d.weather[0].description));
 
