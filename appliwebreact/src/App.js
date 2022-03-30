@@ -15,12 +15,12 @@ function App() {
             Liste des Routes
             */}
 
+            <Accueil />
+            {<SideBarTest routes={tableRoutes}/>}
 
-            <SideBarTest routes={tableRoutes}/>
-
-            <Navbar/>
+            {<Navbar/>}
             <div>
-                <Main/>
+                {<Main/>}
             </div>
         </div>
     );
