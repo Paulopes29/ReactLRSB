@@ -2,6 +2,8 @@ import * as React from "react";
 import SideBarTest from "./Components/SideBar/SideBar"
 import tableRoutes from "./Components/Routes/Routes"
 import Navbar from "./Components/NavBar/Navbar"
+import Accueil from './Components/Accueil/Accueil.js'
+import LoginPage from "./Components/Login/Login";
 import Main from "./Components/Main/Main";
 
 function App() {
@@ -12,9 +14,18 @@ function App() {
             */}
             <SideBarTest routes={tableRoutes}/>
             <Navbar/>
-            <Main/>
+
+
+            <Accueil />
+            {<SideBarTest routes={tableRoutes}/>}
+
+            {<Navbar/>}
+            <div>
+                {<Main/>}
+            </div>
         </div>
     );
+
 }
 
 export default App;
