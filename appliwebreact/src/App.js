@@ -1,30 +1,27 @@
-import './App.css';
 import * as React from "react";
-import {Route, Routes, } from "react-router-dom";
-import LoginPage from "./Components/Login/Login";
+import {Route, Routes,} from "react-router-dom";
 import TestRoute from "./Components/test"
-import routesTest from "./Components/Routes/Routes"
-import SideBar from "./Components/SideBar/SideBar"
+import SideBarTest from "./Components/SideBar/SideBar"
+import tableRoutes from "./Components/Routes/Routes"
+import Navbar from "./Components/NavBar/Navbar"
+import Accueil from "./Components/Accueil";
+import LoginPage from "./Components/Login/Login";
+import Main from "./Components/Main/Main";
 
 function App() {
     return (
         <div className="App">
             {/*
             Liste des Routes
-
             */}
-            <Routes>
-                <Route path="/" element={<LoginPage/>}/>
-                <Route path="/Test" element={<TestRoute/>}/>
-            </Routes>
-            {
-                /*
-                Récuperation et affichage des routes depuis mon tableau pour les afficher dans la sideBar
-                 */
-                routesTest.map((route,index) => {
-                    return <SideBar route={route}/>
-                })
-            }
+
+
+            <SideBarTest routes={tableRoutes}/>
+
+            <Navbar/>
+            <div>
+                <Main/>
+            </div>
         </div>
     );
 }
