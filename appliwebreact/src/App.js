@@ -1,12 +1,18 @@
-import './App.css';
+import AppStyle from'./App.css';
 import NavbarBP from "./Components/NavBar/Navbar";
-import Home from './Components/Accueil.js'
+import Accueil from './Components/Accueil/Accueil.js'
 
 function App() {
   return (
-    <div className="App">
-      <NavbarBP />
-      <Home/>
+    <div class="App">
+      <div >
+           
+      </div>
+      <div>
+        <NavbarBP />
+        <Accueil />
+      </div>
+     
     </div>
   );
 }
