@@ -2,7 +2,6 @@ import './App.css';
 import React, { useEffect, useState } from "react";
 import Meteo from './Components/Meteo';
 export default function App() {
-
     //Latitude
     const [latitude, setLatitude] = useState([]);
     //Longitude
@@ -11,7 +10,6 @@ export default function App() {
     const [data, setData] = useState([]);
     //Donnees obtenues pour les prochains jours avec API grace a LAT et LONG
     const [dataNextDay, setDataNextDay] = useState([]);
-
 
     //Petite fonction pour obtenir la latitude et la longitude
     function getLatitudeLongitude(){
@@ -25,10 +23,10 @@ export default function App() {
     }
 
     useEffect(() => {
-        const fetchData = async () => {
+        const fetchData = () => {
             //On fait app
             getLatitudeLongitude();
-            await fetch(`https://api.openweathermap.org/data/2.5/weather/?lat=${latitude}&lon=${longitude}&units=metric&lang=fr&APPID=1af08637b28864881793396435823894`)
+            fetch(`https://api.openweathermap.org/data/2.5/weather/?lat=${latitude}&lon=${longitude}&units=metric&lang=fr&APPID=1af08637b28864881793396435823894`)
                 .then(res => res.json())
                 .then(result => {
                     setData(result)
@@ -46,7 +44,6 @@ export default function App() {
             ): (
                 <div></div>
             )}
-
         </div>
     );
 }
