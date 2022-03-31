@@ -37,7 +37,7 @@ const RoutesSideBar = [
     {
         visible:true,
         path: "/Country",
-        name: "ville",
+        name: "Ville",
         icon: <FaList />,
         component: Country,
         layout: "",
