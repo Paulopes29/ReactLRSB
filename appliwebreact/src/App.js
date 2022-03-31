@@ -5,6 +5,7 @@ import Navbar from "./Components/NavBar/Navbar"
 import Accueil from './Components/Accueil/Accueil.js'
 import LoginPage from "./Components/Login/Login";
 import Main from "./Components/Main/Main";
+import Crypto from './Components/HSCompo/Crypto'
 
 function App() {
     return (
