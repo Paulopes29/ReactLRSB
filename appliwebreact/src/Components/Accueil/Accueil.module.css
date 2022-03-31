@@ -1,9 +1,12 @@
 .maindiv{
     display: flex;
-    margin-top: 25px;
     border-radius: 25px;
-    background-color: #00188d;
+    background-color: #f0f0f0;
     box-shadow: 11px 5px 5px rgb(104 106 106 / 37%);
+    width: 900px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
 }
 .maindiv div{
     padding-right: 20px;
@@ -12,11 +15,11 @@
 }
 
 .maindiv h1{
-    color: white;
+    color: #005245;
 }
 
 .maindiv p{
-    color: white;
+    color: #005245;
 }
 
 .verticalAlign{

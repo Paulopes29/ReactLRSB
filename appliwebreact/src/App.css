@@ -1,5 +1,26 @@
+@import "~normalize.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+
 .App {
   text-align: center;
+}
+
+.test{
+  border: 10px solid gray;
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.test2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {
