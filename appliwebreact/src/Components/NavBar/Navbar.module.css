@@ -1,13 +1,18 @@
 .navBarContainer {
-    width: 100%;
-    position: fixed;
+    width: -webkit-fill-available;
+    /* position: fixed; */
     display: inline-flex;
-    left: 270px;
-    max-width: calc(100vw - 270px);
-    height: 100vh;
-    z-index: 0;
+    margin-left: 270px;
+    /* max-width: calc(100vw - 270px); */
+    /* height: 100vh; */
+    z-index: 50;
     box-shadow: none;
 }
+
+.navBarContainer_nav{
+    background-color: #1d1d1d;
+}
+
 
 .navBarContent {
     display: flex;
