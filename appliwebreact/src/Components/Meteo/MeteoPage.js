@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import meteoCSS from './Components/Meteo.component.css';
-
+import style from './Meteo.module.css';
 // Creation d'une fonction qui va interroger API meteo
 function useMeteoAPI ({apiKey, latitude, longitude, unite = 'metric'}) {
     //Definition de data, setData et de API url
@@ -23,7 +22,7 @@ function useMeteoAPI ({apiKey, latitude, longitude, unite = 'metric'}) {
 // Fonction Meteo qui utilise la fonction useMeteoAPI avec l'API Key en params, latitude, longitude et l'unité (metre, ...)
 function Meteo ({}) {
     const meteo = useMeteoAPI({
-        apiKey: 'c9f537b79dd1d68d847b5d1927b66364',
+        apiKey: 'b73c6ca7f13ab1022bc2768f583091e0',
         latitude: 45.7802,
         longitude: 3.0736,
         unite: 'imperial'
@@ -45,7 +44,7 @@ function Meteo ({}) {
 
     //Ici on récupère les données qui nous intéressent : la température jusqu'à J+3 && l'humidité du jour J && la vitesse du vent jour J && description meteo jour J
     const tempJours = meteo && meteo.daily.slice(0, 5).map((d) => parseFloat(((d.temp.max-32)*(5/9))).toString().substring(0,4));
-    const humiditeJours = meteo && meteo.daily.slice(0, 1).map((d) => parseFloat((d.humidity)).toString().substring(0,1));
+    const humiditeJours = meteo && meteo.daily.slice(0, 1).map((d) => parseFloat((d.humidity)).toString().substring(0,3));
     const ventJours = meteo && meteo.daily.slice(0, 1).map((d) => parseFloat((d.wind_speed)).toString().substring(0,1));
     const descriptionMeteo = meteo && meteo.daily.slice(0, 1).map((d) => (d.weather[0].description));
 
@@ -78,47 +77,48 @@ function Meteo ({}) {
             <br></br>
             <br></br>
             <br></br>
-            <div className="container">
+            <div className={style.containerDepart}>
 
-                <div className="weather-side">
-                    <div className="weather-gradient"></div>
-                    <div className="date-container">
-                        <h2 className="date-dayname">{dateDuJourMajuscule}</h2>
-                        <span className="date-day">{dateJJ.toLocaleDateString("fr-FR", dateDuJour)}</span><i
-                        className="location-icon" data-feather="map-pin"></i><span className="location">LYON, FR</span>
+                <div className={style.weatherSidePart}>
+                    <div className={style.weatherGradientC}></div>
+                    <div className={style.dateContainerC}>
+                        <h2 className={style.dateDaynameC}>{dateDuJourMajuscule}</h2>
+                        <span className={style.dateDayC}>{dateJJ.toLocaleDateString("fr-FR", dateDuJour)}</span>
+                            <i className={style.locationIconC} data-feather="map-pin"></i>
+                        <span className={style.locationC}>LYON, FR</span>
                     </div>
-                    <div className="weather-container"><i className="weather-icon" data-feather="sun"></i>
-                        <h1 className="weather-temp">{j0}°C</h1>
-                        <h3 className="weather-desc"> {descMeteo}</h3>
+                    <div className={style.weatherContainerC}><i className={style.weatherIconC2} data-feather="sun"></i>
+                        <h1 className={style.weatherTempC}>{j0}°C</h1>
+                        <h3 className={style.weatherDescC}> {descMeteo}</h3>
                     </div>
                 </div>
-                <div className="info-side">
-                    <div className="today-info-container">
-                        <div className="today-info">
-                            <div className="precipitation"><span className="title">PRECIPITATION</span><span
-                                className="value">0 %</span>
-                                <div className="clear"></div>
+                <div className={style.infoSideC}>
+                    <div className={style.todayInfoC}>
+                        <div className={style.todayInfoC}>
+                            <div className="precipitation"><span className={style.title}>PRECIPITATION</span><span
+                                className={style.valueC}>0 %</span>
+                                <div className={style.clearC}></div>
                             </div>
-                            <div className="humidity"><span className="title">HUMIDITE</span><span
-                                className="value">{humiditeJour1} %</span>
-                                <div className="clear"></div>
+                            <div className="humidity"><span className={style.title}>HUMIDITE</span><span
+                                className={style.valueC}>{humiditeJour1} %</span>
+                                <div className={style.clearC}></div>
                             </div>
-                            <div className="wind"><span className="title">VENT</span><span className="value">{ventJour1} km/h</span>
-                                <div className="clear"></div>
+                            <div className="wind"><span className={style.title}>VENT</span><span className={style.valueC}>{ventJour1} km/h</span>
+                                <div className={style.clearC}></div>
                             </div>
                         </div>
                     </div>
                     <div className="week-container">
-                        <ul className="week-list">
-                            <li className="active"><i className="day-icon" data-feather="sun"></i><span
-                                className="day-name">AUJ</span><span className="day-temp">{j0}°C</span></li>
-                            <li><i className="day-icon" data-feather="cloud"></i><span className="day-name">{jourPlus1}</span><span
-                                className="day-temp">{j1}°C</span></li>
-                            <li><i className="day-icon" data-feather="cloud-snow"></i><span
-                                className="day-name">{jourPlus2}</span><span className="day-temp">{j2}°C</span></li>
-                            <li><i className="day-icon" data-feather="cloud-rain"></i><span
-                                className="day-name">{jourPlus3}</span><span className="day-temp">{j3}°C</span></li>
-                            <div className="clear"></div>
+                        <ul className={style.weekListC}>
+                            <li className={style.active}><i className={style.dayIconC} data-feather="sun"></i><span
+                                className={style.dayNameC}>AUJ</span><span className={style.dayTempC}>{j0}°C</span></li>
+                            <li><i className={style.dayIconC} data-feather="cloud"></i><span className={style.dayNameC}>{jourPlus1}</span><span
+                                className={style.dayTempC}>{j1}°C</span></li>
+                            <li><i className={style.dayIconC} data-feather="cloud-snow"></i><span
+                                className={style.dayNameC}>{jourPlus2}</span><span className={style.dayTempC}>{j2}°C</span></li>
+                            <li><i className={style.dayIconC} data-feather="cloud-rain"></i><span
+                                className={style.dayNameC}>{jourPlus3}</span><span className={style.dayTempC}>{j3}°C</span></li>
+                            <div className={style.clearC}></div>
                         </ul>
                     </div>
                 </div>

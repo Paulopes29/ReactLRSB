@@ -2,16 +2,17 @@
     width: 100%;
     position: fixed;
     display: inline-flex;
-    top: 0;
     left: 270px;
     max-width: calc(100vw - 270px);
     height: 100vh;
-    z-index: 100;
+    z-index: 0;
+    box-shadow: none;
 }
 
 .navBarContent {
     display: flex;
     flex-direction: row;
+    max-width: calc(100vw - 200px);
 }
 
 .navBarContent Button {
