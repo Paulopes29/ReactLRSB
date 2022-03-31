@@ -4,6 +4,7 @@ import Accueil from "../Accueil/Accueil";
 import TestRoute from "../test";
 import LoginPage from "../Login/Login";
 import Style from "./Main.module.css"
+import Country from "../CountryComponent/Country";
 
 const Main = () => {
 
@@ -15,6 +16,7 @@ const Main = () => {
                     <Route path="/" element={<Accueil/>}/>*/}
                     <Route path="/Test" element={<TestRoute/>}/>
                     <Route path="/Login" element={<LoginPage/>}/>
+                    <Route path="/Country" element={<Country/>}/>
                 </Routes>
             </div>
         </section>
