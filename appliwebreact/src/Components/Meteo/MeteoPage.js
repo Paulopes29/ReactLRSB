@@ -42,11 +42,12 @@ function Meteo ({}) {
     const jourPlus3 = date.toLocaleDateString('fr-FR', nomDuJour).toUpperCase().substring(0,3)
 
 
-    //Ici on récupère les données qui nous intéressent : la température jusqu'à J+3 && l'humidité du jour J && la vitesse du vent jour J && description meteo jour J
+    //Ici on récupère les données qui nous intéressent : la température jusqu'à J+3 && l'humidité du jour J && la vitesse du vent jour J && description meteo jour J && %tage pluie
     const tempJours = meteo && meteo.daily.slice(0, 5).map((d) => parseFloat(((d.temp.max-32)*(5/9))).toString().substring(0,4));
     const humiditeJours = meteo && meteo.daily.slice(0, 1).map((d) => parseFloat((d.humidity)).toString().substring(0,3));
     const ventJours = meteo && meteo.daily.slice(0, 1).map((d) => parseFloat((d.wind_speed)).toString().substring(0,1));
     const descriptionMeteo = meteo && meteo.daily.slice(0, 1).map((d) => (d.weather[0].description));
+    const pourcentagePluie = meteo && meteo.daily.slice(0, 1).map((d) => (d.rain));
 
     // Définition des variables jour J jusqu'à J+3
     let j0 = 0;
@@ -57,8 +58,9 @@ function Meteo ({}) {
     let humiditeJour1 = 0;
     let ventJour1 = 0;
     let descMeteo = "";
+    let pluie = 0;
     // Si les resultats retournés par l'API ne sont pas nuls, on assigne les valeurs
-    if(tempJours !== null && humiditeJours !== null && ventJours !== null && descriptionMeteo !== null){
+    if(tempJours !== null && humiditeJours !== null && ventJours !== null && descriptionMeteo !== null && pourcentagePluie !== null){
         j0 = tempJours[0];
         j1 = tempJours[1];
         j2 = tempJours[2];
@@ -66,6 +68,7 @@ function Meteo ({}) {
         humiditeJour1 = humiditeJours[0];
         ventJour1 = ventJours[0];
         descMeteo = descriptionMeteo[0];
+        pluie = pourcentagePluie[0];
     }
     return (
         <div>
@@ -96,7 +99,7 @@ function Meteo ({}) {
                     <div className={style.todayInfoC}>
                         <div className={style.todayInfoC}>
                             <div className="precipitation"><span className={style.title}>PRECIPITATION</span><span
-                                className={style.valueC}>0 %</span>
+                                className={style.valueC}>{pluie} %</span>
                                 <div className={style.clearC}></div>
                             </div>
                             <div className="humidity"><span className={style.title}>HUMIDITE</span><span
