@@ -10,11 +10,7 @@ import Crypto from './Components/HSCompo/Crypto'
 function App() {
     return (
         <div className="App">
-            
-            /*Liste des Routes*/
-            
-
-          <div>            
+            <div>
             <SideBarTest routes={tableRoutes}/>
             <Navbar/>
             <div>
