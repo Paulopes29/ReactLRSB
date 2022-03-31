@@ -78,4 +78,4 @@ const meteo = ({meteoData}) => (
         </div>
     </Card>
 )
-export default meteo;
+export default Meteo;

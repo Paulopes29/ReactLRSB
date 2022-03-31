@@ -1,5 +1,4 @@
 import LoginPage from "../Login/Login";
-import TestRoute from "../test"
 import { FiHome} from "react-icons/fi";
 import {FaList} from "react-icons/fa";
 import React from "react";
@@ -22,15 +21,6 @@ const RoutesSideBar = [
         name: "Login",
         icon: <FiHome />,
         component: LoginPage,
-        layout: "",
-        actif: false
-    },
-    {
-        visible:true,
-        path: "/Test",
-        name: "Test",
-        icon: <FaList />,
-        component: TestRoute,
         layout: "",
         actif: false
     },
