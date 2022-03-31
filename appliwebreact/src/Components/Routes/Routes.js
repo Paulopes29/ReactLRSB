@@ -1,10 +1,8 @@
 import LoginPage from "../Login/Login";
 import { FiHome} from "react-icons/fi";
-import {FaList} from "react-icons/fa";
+import {FaCity, FaSun} from "react-icons/fa";
 import React from "react";
 import Country from "../CountryComponent/Country";
-import Meteo from "../Meteo/MeteoPage";
-import News from "../News/NewsPages";
 
 //Liste des routes disponibles pour les afficher dans la sideBar
 const RoutesSideBar = [
@@ -13,46 +11,35 @@ const RoutesSideBar = [
         path: "/",
         name: "Accueil",
         icon: <FiHome />,
-        component: LoginPage,
-        layout: "",
-        actif: true
+        layout: ""
     },
     {
         visible:true,
         path: "/Login",
         name: "Login",
         icon: <FiHome />,
-        component: LoginPage,
-        layout: "",
-        actif: false
+        layout: ""
     },
     {
         visible:true,
         path: "/Country",
         name: "ville",
-        icon: <FaList />,
-        component: Country,
-        layout: "",
-        actif: false
+        icon: <FaCity />,
+        layout: ""
     },
     {
         visible:true,
-        path: "/Meteo",
-        name: "meteo",
-        icon: <FaList />,
-        component: Meteo,
-        layout: "",
-        actif: false
-    }
-    ,
+        path: "/MeteoParVille",
+        name: "Méteo des villes",
+        icon: <FaSun />,
+        layout: ""
+    },
     {
         visible:true,
-        path: "/News",
-        name: "news",
-        icon: <FaList />,
-        component: News,
-        layout: "",
-        actif: false
+        path: "/Test",
+        name: "Méteo des villes",
+        icon: <FaSun />,
+        layout: ""
     }
 ];
 export default RoutesSideBar;
