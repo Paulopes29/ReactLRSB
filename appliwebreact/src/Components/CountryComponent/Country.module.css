@@ -1,0 +1,21 @@
+.buttonMargin {
+    margin-top: 20px;
+}
+
+.inputMargin {
+    margin-bottom: 10px;
+}
+
+.searchDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultContent {
+    place-content: space-around;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}

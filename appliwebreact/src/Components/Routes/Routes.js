@@ -27,6 +27,12 @@ const RoutesSideBar = [
     },
     {
         visible:true,
+        path: "/Country",
+        name: "Ville",
+        icon: <FaList />,
+        layout: "",
+    },
+    {
         path: "/MeteoParVille",
         name: "Méteo des villes",
         icon: <FaSun />,
