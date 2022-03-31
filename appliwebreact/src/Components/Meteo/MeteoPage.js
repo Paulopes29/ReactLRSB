@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import meteoCSS from './Components/Meteo.component.css';
+import meteoCSS from './Meteo.component.css';
 
 // Creation d'une fonction qui va interroger API meteo
 function useMeteoAPI ({apiKey, latitude, longitude, unite = 'metric'}) {

@@ -26,9 +26,7 @@ const SideBar = ({routes}) => {
             <div className={style.Display}>
                 <ProSidebar collapsed={menuCollapse}>
                     <SidebarHeader className={style.SideBar}>
-
                         <div className={style.closemenu} onClick={menuIconClick}>
-
                             {menuCollapse ? (
                                 <FiArrowRightCircle/>
                             ) : (
@@ -36,12 +34,12 @@ const SideBar = ({routes}) => {
                             )}
                         </div>
                         <br/><br/>
-                        <div className={style.logotext}>
+                        {/*<div className={style.logotext}>*/}
 
-                            <p>{menuCollapse ? "Météo" : "Station météo"}</p>
-                        </div>
+                        {/*    <p>{menuCollapse ? "Météo" : "Station météo"}</p>*/}
+                        {/*</div>*/}
                     </SidebarHeader>
-                    <br/> <br/> <br/>
+                    <br/> <br/>
                     <SidebarContent>
                         <Menu className={style.proSidebar} iconShape="square">
                             {

@@ -17,7 +17,7 @@ const jourPlus2 = date.toLocaleDateString('fr-FR', nomDuJour).toUpperCase().subs
 date.setDate(date.getDate() + 1);
 const jourPlus3 = date.toLocaleDateString('fr-FR', nomDuJour).toUpperCase().substring(0,3)
 
-const meteo = ({meteoData}) => (
+const Meteo = ({meteoData}) => (
     <Card>
         <br></br>
         <br></br>

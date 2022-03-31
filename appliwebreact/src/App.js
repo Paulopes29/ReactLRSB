@@ -15,7 +15,7 @@ function App() {
             <SideBarTest routes={tableRoutes}/>
 
             <Navbar/>
-            <div>
+            <div style={{marginLeft: "270px",height: "100vh"}}>
                 <Main/>
             </div>
         </div>
