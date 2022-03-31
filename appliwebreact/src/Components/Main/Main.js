@@ -5,6 +5,7 @@ import TestRoute from "../test";
 import LoginPage from "../Login/Login";
 import Style from "./Main.module.css"
 import Country from "../CountryComponent/Country";
+import Meteo from "../Meteo/MeteoPage";
 
 const Main = () => {
 
@@ -17,6 +18,7 @@ const Main = () => {
                     <Route path="/Test" element={<TestRoute/>}/>
                     <Route path="/Login" element={<LoginPage/>}/>
                     <Route path="/Country" element={<Country/>}/>
+                    <Route path="/Meteo" element={<Meteo/>}/>
                 </Routes>
             </div>
         </section>
