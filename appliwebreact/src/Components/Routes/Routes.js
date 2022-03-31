@@ -1,5 +1,5 @@
 import { FiHome} from "react-icons/fi";
-import {FaCity, FaSun} from "react-icons/fa";
+import {FaCity, FaList, FaSun} from "react-icons/fa";
 import React from "react";
 
 //Liste des routes disponibles pour les afficher dans la sideBar
@@ -21,15 +21,8 @@ const RoutesSideBar = [
     {
         visible:true,
         path: "/Country",
-        name: "ville",
-        icon: <FaCity />,
-        layout: ""
-    },
-    {
-        visible:true,
-        path: "/Country",
         name: "Ville",
-        icon: <FaList />,
+        icon: <FaCity />,
         layout: "",
     },
     {
@@ -41,7 +34,7 @@ const RoutesSideBar = [
     {
         visible:true,
         path: "/Test",
-        name: "Méteo des villes",
+        name: "Localisation météo",
         icon: <FaSun />,
         layout: ""
     }
