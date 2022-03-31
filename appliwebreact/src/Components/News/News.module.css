@@ -1,6 +1,5 @@
 .centerContent {
     text-align: center;
-    height: 120vh;
 }
 .card {
     /* Add shadows to create the "card" effect */
@@ -22,6 +21,7 @@
     width: 80%;
     margin-left: 15%;
     margin-right: 25%;
+    background-color: #ecdede;
 }
 
 .imageP {
