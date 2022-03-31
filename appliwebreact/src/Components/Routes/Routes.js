@@ -13,13 +13,6 @@ const RoutesSideBar = [
     },
     {
         visible:true,
-        path: "/Login",
-        name: "Login",
-        icon: <FiHome />,
-        layout: ""
-    },
-    {
-        visible:true,
         path: "/Country",
         name: "Ville",
         icon: <FaCity />,
