@@ -1,8 +1,6 @@
-import LoginPage from "../Login/Login";
 import { FiHome} from "react-icons/fi";
 import {FaCity, FaSun} from "react-icons/fa";
 import React from "react";
-import Country from "../CountryComponent/Country";
 
 //Liste des routes disponibles pour les afficher dans la sideBar
 const RoutesSideBar = [
