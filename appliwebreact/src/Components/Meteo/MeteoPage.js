@@ -49,6 +49,7 @@ function Meteo ({}) {
     const ventJours = meteo && meteo.daily.slice(0, 1).map((d) => parseFloat((d.wind_speed)).toString().substring(0,1));
     const descriptionMeteo = meteo && meteo.daily.slice(0, 1).map((d) => (d.weather[0].description));
     const pourcentagePluie = meteo && meteo.daily.slice(0, 1).map((d) => (d.rain));
+    const pourcentageNeige = meteo && meteo.daily.slice(0, 1).map((d) => (d.snow));
 
     // Définition des variables jour J jusqu'à J+3
     let j0 = 0;
@@ -69,7 +70,11 @@ function Meteo ({}) {
         humiditeJour1 = humiditeJours[0];
         ventJour1 = ventJours[0];
         descMeteo = descriptionMeteo[0];
-        pluie = pourcentagePluie[0];
+        if(descMeteo == "chutes de neige") {
+            pluie = pourcentageNeige[0];
+        }else {
+            pluie = pourcentagePluie[0];
+        }
     }
     return (
         <div>
