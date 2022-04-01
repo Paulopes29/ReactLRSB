@@ -8,6 +8,7 @@ import Country from "../CountryComponent/Country";
 import Meteo from "../Meteo/MeteoPage";
 import News from "../News/News";
 import NewsPages from "../News/NewsPages";
+import Cryptos from '../HSCompo/Crypto';
 
 const Main = () => {
 
@@ -22,6 +23,7 @@ const Main = () => {
                     <Route path="/Country" element={<Country/>}/>
                     <Route path="/Meteo" element={<Meteo/>}/>
                     <Route path="/News" element={<NewsPages/>}/>
+                    <Route path="/Cryptos" element={<Cryptos/>}/>
                 </Routes>
             </div>
         </section>

@@ -6,6 +6,7 @@ import React from "react";
 import Country from "../CountryComponent/Country";
 import Meteo from "../Meteo/MeteoPage";
 import News from "../News/NewsPages";
+import Cryptos from '../HSCompo/Crypto';
 
 //Liste des routes disponibles pour les afficher dans la sideBar
 const RoutesSideBar = [
@@ -61,6 +62,16 @@ const RoutesSideBar = [
         name: "news",
         icon: <FaList />,
         component: News,
+        layout: "",
+        actif: false
+    }
+    ,
+    {
+        visible:true,
+        path: "/Cryptos",
+        name: "Cryptos",
+        icon: <FaList />,
+        component: Cryptos,
         layout: "",
         actif: false
     }

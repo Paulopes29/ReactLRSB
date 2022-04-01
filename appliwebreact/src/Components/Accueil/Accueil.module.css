@@ -1,34 +1,67 @@
-.maindiv{
-    display: flex;
+.parentCard{
+    background-color: beige;
     border-radius: 25px;
-    background-color: #f0f0f0;
-    box-shadow: 11px 5px 5px rgb(104 106 106 / 37%);
-    width: 900px;
-    margin: auto;
-    padding: 20px;
-    margin-top: 50px;
-    text-align: center;
-}
-.maindiv div{
-    padding-right: 20px;
-    padding-left: 20px;
-   
+    box-shadow: rgb(54, 54, 54);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding: 25px;
+    width: 800px;
+    margin-top: 200px;    
 }
 
-.maindiv h1{
-    color: #005245;
+.parent {
+    display: grid;  
+    place-items: center;    
 }
 
-.maindiv p{
-    color: #005245;
-}
-
-.verticalAlign{
+.boxwrap{
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.boxchild{
+    background-color: white;
+    border-radius: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    flex: 0 1 200px;
+    margin: 5px;
+    height: 250px;
+    transition: transform .2s;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.boxchild:hover{
+    transform: scale(1.05);
 }
 
-.imgsize{
-    display: content;
-    max-width: 30%;
+.boxmail{
+    background-color: white;
+    border-radius: 25px;    
+    padding-left: 50px;
+    padding-right: 50px;
+    flex: 0 1 200px;
+    margin: 5px;
+    height: 250px;    
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    font-weight: 200;
+    color: rgb(0, 0, 0);
 }
+
+
+.nuage{
+    background-image: url("https://images.unsplash.com/photo-1534088568595-a066f410bcda?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEzNzYzNn0?utm_source=dictionnaire&utm_medium=referral");
+}
+   
+.soleil{
+    background: url("https://downloadwap.com/thumbs2/wallpapers/p2/2019/nature/21/05d174e913523604.jpg");
+}
+.neige{
+    background: url("https://static4.mclcm.net/iod/images/v2/69/photo/337920/1280x720_100_300_000000x30x0.jpg?ts=20200130194400");
+}
+
