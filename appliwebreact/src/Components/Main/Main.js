@@ -11,12 +11,15 @@ import MeteoParVille from "../MeteoByVille/MeteoParVille";
 import Card from "../Card/Card";
 import MeteoPage from "../Meteo/MeteoPage";
 import styleCard from "../Card/Card.module.css";
+import {MenuCollapseProvider} from "../Store/Store";
 
 
 const Main = () => {
 
     return (
         <Card className={styleCard.main}>
+
+                       <MenuCollapseProvider>
             <Routes>
                 <Route path="/" element={<Accueil/>}/>/}
                 <Route path="/Login" element={<LoginPage/>}/>
@@ -25,6 +28,8 @@ const Main = () => {
                 <Route path="/Test" element={<MeteoPage/>}/>
                 <Route path="/Cryptos" element={<Cryptos/>}/>
             </Routes>
+</MenuCollapseProvider>
+
         </Card>
 
     )

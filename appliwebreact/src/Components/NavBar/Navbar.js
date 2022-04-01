@@ -13,7 +13,7 @@ function NavbarBP() {
                 </div>
                 <div className="bp4-navbar-group bp4-align-right">
                     <NavLink to='/Login'>
-                    <button className="bp4-button bp4-minimal bp4-icon-log-in">Login</button>
+                        <button className="bp4-button bp4-minimal bp4-icon-log-in">Login</button>
                     </NavLink>
                 </div>
             </nav>
