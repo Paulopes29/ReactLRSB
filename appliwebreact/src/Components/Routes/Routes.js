@@ -7,7 +7,6 @@ import Meteo from "../Meteo/MeteoPage";
 import News from "../News/NewsPages";
 import Cryptos from '../HSCompo/Crypto';
 
-
 //Liste des routes disponibles pour les afficher dans la sideBar
 const RoutesSideBar = [
     {
@@ -42,6 +41,14 @@ const RoutesSideBar = [
         visible:true,
         path: "/Cryptos",
         name: "Cryptos",
+        icon: <FaList />,
+        layout: "",
+    }
+    ,
+    {
+        visible:true,
+        path: "/News",
+        name: "News",
         icon: <FaList />,
         layout: "",
     }

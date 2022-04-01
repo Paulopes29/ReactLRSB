@@ -4,7 +4,7 @@ import Accueil from "../Accueil/Accueil";
 import LoginPage from "../Login/Login";
 import Country from "../CountryComponent/Country";
 import Meteo from "../Meteo/MeteoPage";
-import News from "../News/News";
+import News from "../News/NewsPages";
 import NewsPages from "../News/NewsPages";
 import Cryptos from '../HSCompo/Crypto';
 import MeteoParVille from "../MeteoByVille/MeteoParVille";
@@ -24,6 +24,7 @@ const Main = () => {
                 <Route path="/MeteoParVille" element={<MeteoParVille/>}/>
                 <Route path="/Test" element={<MeteoPage/>}/>
                 <Route path="/Cryptos" element={<Cryptos/>}/>
+                <Route path="/News" element={<News/>}/>
             </Routes>
         </Card>
 
