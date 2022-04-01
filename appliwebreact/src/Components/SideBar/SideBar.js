@@ -13,7 +13,6 @@ import {NavLink} from "react-router-dom";
 
 
 const SideBar = ({routes}) => {
-
     //use state pour agrandir et reduire la sidebar
     const [menuCollapse, setMenuCollapse] = useState(false)
 
@@ -27,9 +26,7 @@ const SideBar = ({routes}) => {
             <div className={style.Display}>
                 <ProSidebar collapsed={menuCollapse}>
                     <SidebarHeader className={style.SideBar}>
-
                         <div className={style.closemenu} onClick={menuIconClick}>
-
                             {menuCollapse ? (
                                 <FiArrowRightCircle/>
                             ) : (
@@ -37,17 +34,17 @@ const SideBar = ({routes}) => {
                             )}
                         </div>
                         <br/><br/>
-                        <div className={style.logotext}>
+                        {/*<div className={style.logotext}>*/}
 
-                            <p>{menuCollapse ? "Météo" : "Station météo"}</p>
-                        </div>
+                        {/*    <p>{menuCollapse ? "Météo" : "Station météo"}</p>*/}
+                        {/*</div>*/}
                     </SidebarHeader>
-                    <br/> <br/> <br/>
+                    <br/> <br/>
                     <SidebarContent>
                         <Menu className={style.proSidebar} iconShape="square">
                             {
                                 routes.map((route) => {
-                                    return <MenuItem active={route.actif} icon={route.icon}>
+                                    return <MenuItem active= {route.actif} icon={route.icon}>
                                         <NavLink to={route.layout + route.path}>
                                             {route.name}
                                         </NavLink>
