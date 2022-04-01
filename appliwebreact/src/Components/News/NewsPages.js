@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import TitlePage from "./TitlePage";
 import News from "./News";
 
+
 function NewsPage() {
     const [myNews, setNews] = useState([]);
 
@@ -27,7 +28,7 @@ function NewsPage() {
 
     return (
         <div className="App">
-            <TitlePage myProp='Some news' updater={ChildToParentUpdater} />
+            <TitlePage titre='Some news' updater={ChildToParentUpdater} />
             {
                 myNews.map((element) => {
                     return <News elem={element} />
