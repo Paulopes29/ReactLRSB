@@ -9,7 +9,7 @@ Fonctionnalités :
 Problèmes rencontrés :   
 Je ne pratique jamais le react en entreprise. Je possédais que des connaissances limitées vis à vis du react (grâce au cours de l'année dernière)  
 Ce que j'ai appris :  
-- utilisation de useEffect (je ne connaissais absolument pas). J'ai mis un peu de temps à comprendre
+- utilisation de useState et useEffect (je ne connaissais absolument pas). J'ai mis un peu de temps à comprendre
 - module CSS, ce n'est pas très compliqué
 - les routeurs
 
