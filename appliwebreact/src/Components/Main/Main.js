@@ -7,18 +7,21 @@ import MeteoParVille from "../MeteoByVille/MeteoParVille";
 import Card from "../Card/Card";
 import MeteoPage from "../Meteo/MeteoPage";
 import styleCard from "../Card/Card.module.css";
+import {MenuCollapseProvider} from "../Store/Store";
 
 const Main = () => {
 
     return (
         <Card className={styleCard.main}>
-            <Routes>
-                <Route path="/" element={<Accueil/>}/>/}
-                <Route path="/Login" element={<LoginPage/>}/>
-                <Route path="/Country" element={<Country/>}/>
-                <Route path="/MeteoParVille" element={<MeteoParVille/>}/>
-                <Route path="/Test" element={<MeteoPage/>}/>
-            </Routes>
+            <MenuCollapseProvider>
+                <Routes>
+                    <Route path="/" element={<Accueil/>}/>/}
+                    <Route path="/Login" element={<LoginPage/>}/>
+                    <Route path="/Country" element={<Country/>}/>
+                    <Route path="/MeteoParVille" element={<MeteoParVille/>}/>
+                    <Route path="/Test" element={<MeteoPage/>}/>
+                </Routes>
+            </MenuCollapseProvider>
         </Card>
 
     )
