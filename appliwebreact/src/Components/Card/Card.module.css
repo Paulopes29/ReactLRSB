@@ -1,0 +1,61 @@
+
+.cardMeteoVille {
+    font: 0.9rem sans-serif;
+    background: #0a1f44;
+    color: #1e2432;
+    height: 30vh;
+    width: 30vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    padding-right: 1em;
+    padding-left: 1em;
+    -webkit-padding-after: 2em;
+    -webkit-padding-before: 1em;
+
+}
+
+.main {
+    font: 0.9rem sans-serif;
+    background: transparent;
+    color: #1e2432;
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+.cardMeteoVilleInterieure {
+    font: 0.9rem sans-serif;
+    background: skyblue;
+    color: #1e2432;
+    height: calc(100% - 2em);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-padding-before: 1em;
+    font-size: medium;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.cardMeteoVille_sup {
+    background: orange;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.cardMeteoVille_date {
+    font-weight: bold;
+}
+
+.cardMeteoVille_input {
+    -webkit-padding-after: 1em;
+}
+
+

@@ -1,12 +1,18 @@
 .parentCard{
     background-color: beige;
     border-radius: 25px;
+
     box-shadow: rgb(54, 54, 54);
     padding-left: 50px;
     padding-right: 50px;
     padding: 25px;
-    width: 800px;
     margin-top: 200px;    
+}
+.maindiv div{
+    padding-right: 20px;
+    padding-left: 20px;
+
+
 }
 
 .parent {
@@ -63,5 +69,11 @@
 }
 .neige{
     background: url("https://static4.mclcm.net/iod/images/v2/69/photo/337920/1280x720_100_300_000000x30x0.jpg?ts=20200130194400");
+}
+
+
+.imgsize{
+    display: content;
+    max-width: 30%;
 }
 
