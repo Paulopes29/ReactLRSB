@@ -3,13 +3,15 @@ import { Button, Classes, ControlGroup, InputGroup, Intent, PopoverPosition } fr
 
 function Mail(props) {
     return(
-        <div>
-                    <ControlGroup vertical style={{ width: 300, height: 300 }}>
+        <div className={style.mail}>
+                <ControlGroup vertical style={{ width: 300, height: 300 }}>
                     <p>Du soleil jusque dans vos mails !</p>
                     <InputGroup placeholder="Nom" />
                     <InputGroup placeholder="Email" />
                     <Button className={Classes.LARGE} intent={Intent.PRIMARY} text={props.name} />
-                    </ControlGroup>    
+                    </ControlGroup> 
+            
+                       
         </div>
     )
 }
