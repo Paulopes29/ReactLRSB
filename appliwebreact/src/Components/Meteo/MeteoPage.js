@@ -70,7 +70,7 @@ function Meteo ({}) {
         humiditeJour1 = humiditeJours[0];
         ventJour1 = ventJours[0];
         descMeteo = descriptionMeteo[0];
-        if(descMeteo == "chutes de neige") {
+        if(descMeteo === "chutes de neige") {
             pluie = pourcentageNeige[0];
         }else {
             pluie = pourcentagePluie[0];
