@@ -1,7 +1,7 @@
 import React from "react";
 import CryptoStyle from './Crypto.module.css'
 
-
+//Création de mes Cards Cryptos
 const Cryptos = (props) => {
     return (
         <div>
@@ -18,7 +18,7 @@ const Cryptos = (props) => {
                         <table className={CryptoStyle.widthMax}>
                             <tbody>
                                 <tr>
-                                    <td> {props.elem.name}</td>
+                                    <td className={CryptoStyle.lefttext}> {props.elem.name}</td>
                                     <td className={CryptoStyle.rightext}>{Math.round((props.elem.price)*100)/100}</td>
                                 </tr>
                             </tbody>
