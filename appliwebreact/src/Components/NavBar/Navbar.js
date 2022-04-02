@@ -5,6 +5,7 @@ import {NavLink} from "react-router-dom";
 
 function NavbarBP() {
 
+    // Navbar importé depuis BluePrint
     return (
         <div className={style.navBarContainer}>
             <nav className="bp4-navbar bp4-dark background">
