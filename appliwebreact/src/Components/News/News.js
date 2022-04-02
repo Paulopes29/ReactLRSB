@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./News.module.css";
-import { FlatList } from 'react-native';
 
 const News = (props) => {
     return(
