@@ -4,12 +4,15 @@ import Card from "../Card/Card";
 import styleCard from "../Card/Card.module.css"
 
 const MeteoParVille = () => {
+
+    //Use states qui stockent et updantent les data returnées par la requette
     const [requete, setRequete] = useState("");
     const [meteo, setMeteo] = useState({});
 
     //Formatage Date
     const options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
 
+    //Const utilisé pour que quand on recherche une ville dans l'input on appel l'api
     const search = async (event) => {
         if (event.key === "Enter") {
             const data = await fetchMeteo(requete);
@@ -20,6 +23,7 @@ const MeteoParVille = () => {
     };
 
     return (
+        //Rendu de cette view
         <Card className={styleCard.cardMeteoVille}>
             <div className={styleCard.cardMeteoVille_input}>
                 <div className="bp4-input-group">
@@ -31,7 +35,6 @@ const MeteoParVille = () => {
                 </div>
             </div>
             <Card className={styleCard.cardMeteoVilleInterieure}>
-
 
                 {meteo.main && (
                     <div>

@@ -1,6 +1,6 @@
 import { Button, Classes,ControlGroup,InputGroup,Intent } from '@blueprintjs/core';
 
-//Formulaire de Login
+//Formulaire de Login avec blueprint
 
 const LoginPage = () => {
     return(

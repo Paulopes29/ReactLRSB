@@ -5,6 +5,7 @@ const initialState = {
     menuCollapse: false,
 };
 
+//Reducer
 const reducer = (state, action) => {
     switch (action.type) {
         case 'true':
